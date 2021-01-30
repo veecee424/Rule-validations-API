@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 //Home get route
 app.get('/', (req, res)=> {
     const personal_details = JSON.parse(fs.readFileSync('./data/personal_details.json'))
-    return res.json(personal_details)
+    return res.status(200).json(personal_details)
 })
 
 
