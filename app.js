@@ -17,7 +17,7 @@ app.get('/', (req, res)=> {
 
 
 //validation rule
-app.post('/validation-rule', validateInputs, (req, res)=> {
+app.post('/validate-rule', validateInputs, (req, res)=> {
     let { rule, data } = req.body;
   
     try {
